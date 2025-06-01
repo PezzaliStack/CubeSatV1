@@ -1,6 +1,12 @@
-# Architettura del Sistema – PayloadX
+<p align="center">
+  <img src="./PAYLOADX.png" width="220" alt="Logo PayloadX">
+</p>
 
-Questo documento descrive l’architettura modulare del firmware PayloadX, fork del progetto CubeSat v1 di EdgeFlyte.
+<h2 align="center"><strong>Architettura del Sistema – PayloadX</strong></h2>
+
+<p align="center">
+  <em>Struttura firmware modulare per CubeSat open-source, basata su CubeSat v1 di EdgeFlyte.</em>
+</p>
 
 ---
 
