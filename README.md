@@ -32,3 +32,10 @@ a modular, open-source CubeSat system for education, prototyping, and hands-on a
 ---
 
 > 🔭 Developed and maintained by [PezzaliStack](https://github.com/PezzaliStack) – part of the PayloadX open CubeSat project 🚀
+
+---
+
+### ⚖️ License Notice
+
+> This project is a fork of [EdgeFlyte CubeSat v1](https://github.com/edgeflyte/CubeSatV1), distributed under the terms of the [GNU General Public License v3](./LICENSE).  
+> All modifications introduced by **PezzaliStack** under the PayloadX initiative are documented and redistributed under the same license conditions.
