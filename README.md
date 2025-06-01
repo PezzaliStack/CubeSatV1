@@ -1,12 +1,17 @@
+<p align="center">
+  <img src="./docs/PAYLOADX.png" width="280" alt="PayloadX Logo">
+</p>
+
+<h2 align="center"><strong>PayloadX: Modular CubeSat Stack by PezzaliStack</strong></h2>
 
 <p align="center">
-  <img src="./docs/PAYLOADX.png" width="240" alt="PayloadX Logo">
+  <em>A technical fork of the EdgeFlyte CubeSat v1 project – enhanced for open education, prototyping and launch simulation.</em>
 </p>
+
+<hr>
 
 # EdgeFlyte CubeSat v1
 <img src="https://github.com/edgeflyte/CubeSatV1/assets/153346925/1f8ce65b-c617-4442-bee8-1d9a6def1af1" width="50%">
-
-<hr>
 
 Available at the <a href="https://store.edgeflyte.com/products/cubesat-kit" target="_blank">EdgeFlyte Store</a>
 
