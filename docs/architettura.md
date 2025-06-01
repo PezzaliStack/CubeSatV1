@@ -28,3 +28,5 @@ graph TD;
   loop[loop()] --> E[readIMUData()]
   loop --> F[readGPSData()]
   loop --> G[sendTelemetry()]
+
+![PayloadX – System Architecture](./architettura.png)
