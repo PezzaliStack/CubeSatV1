@@ -1,32 +1,32 @@
-# PayloadX – Firmware Architecture
+# Architettura del Sistema – PayloadX
 
-Questo documento descrive l'architettura modulare del firmware PayloadX, derivato da CubeSat v1 di EdgeFlyte.
+Questo documento descrive l’architettura modulare del firmware PayloadX, fork del progetto CubeSat v1 di EdgeFlyte.
 
 ---
 
 ## 📦 Moduli principali
 
-| Modulo     | Descrizione |
-|------------|-------------|
-| `imu.cpp` / `imu.h`     | Inizializza e legge dati da accelerometro, giroscopio, magnetometro |
-| `gps.cpp` / `gps.h`     | Inizializza e raccoglie dati dal modulo GPS (latitudine, longitudine, altitudine, ecc.) |
-| `radio.cpp` / `radio.h` | Gestisce la trasmissione via NRF24 |
-| `bms.cpp` / `bms.h`     | Decodifica i messaggi provenienti dal Battery Management System |
-| `main.cpp`              | Funzione principale: legge, elabora e trasmette i dati in loop |
-| `CubeSat.ino`           | Entry point per Arduino IDE: include i moduli e gestisce la logica |
+| Modulo               | Descrizione |
+|----------------------|-------------|
+| `imu.cpp` / `imu.h`  | Lettura dati dall'IMU (accelerometro, giroscopio, magnetometro) |
+| `gps.cpp` / `gps.h`  | Lettura dati GPS: coordinate, altitudine, velocità, satelliti |
+| `radio.cpp` / `radio.h` | Gestione della comunicazione radio NRF24 |
+| `bms.cpp` / `bms.h`  | Decodifica dei messaggi dal sistema di gestione batteria (BMS) |
+| `main.cpp`           | Ciclo principale: lettura sensori e invio telemetria |
+| `CubeSat.ino`        | Entry point per Arduino IDE che include tutti i moduli |
 
 ---
 
-## 🔁 Flusso dati semplificato
+## 🔁 Flusso del sistema
 
-```mermaid
-graph TD;
-  A[setup()] --> B[initIMU()]
-  A --> C[initGPS()]
-  A --> D[initRadio()]
+L'immagine seguente mostra il flusso dei dati dal sensore fino alla trasmissione:
 
-  loop[loop()] --> E[readIMUData()]
-  loop --> F[readGPSData()]
-  loop --> G[sendTelemetry()]
+![PayloadX – Architettura di sistema](./architettura.png)
 
-![PayloadX – System Architecture](./architettura.png)
+---
+
+## 📄 Licenza
+
+Fork del progetto originale [EdgeFlyte CubeSat v1](https://github.com/edgeflyte/CubeSatV1).  
+Distribuito sotto licenza **GNU GPL v3**.  
+Manutenuto da **PezzaliStack** come parte dell’iniziativa open-source **PayloadX**.
